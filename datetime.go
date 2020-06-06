@@ -1,4 +1,4 @@
-package gutils
+package gutil
 
 // 判断是否是同一天
 func IsOneDay(timestamps ...int64) bool {
