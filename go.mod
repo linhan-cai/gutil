@@ -1,3 +1,3 @@
-module github.com/linhan-cai/gutil
+module gutil
 
 go 1.12

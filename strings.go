@@ -1,4 +1,4 @@
-package github.com/linhan-cai/gutil
+package gutil
 
 import (
 	"encoding/json"
