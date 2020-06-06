@@ -1,4 +1,4 @@
-package putils
+package gutils
 
 import (
 	"encoding/json"
