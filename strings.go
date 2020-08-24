@@ -44,3 +44,7 @@ func NewString(s string) *string {
 	s1 := s
 	return &s1
 }
+
+func MysqlDSN(dbHost string, dbPort uint16, dbUser, dbPass, dbName string) string {
+	return fmt.Sprintf("%s:%s@tcp(%s:%d)/%s", dbUser, dbPass, dbHost, dbPort, dbName)
+}
