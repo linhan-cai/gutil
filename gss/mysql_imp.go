@@ -20,6 +20,12 @@ func NewKVStorageMysqlImp(conf gutil.MysqlConf) (*KVStorageMysqlImp, error) {
 	if err != nil {
 		return nil, err
 	}
+
+	err = db.Ping()
+	if err != nil {
+		return nil, err
+	}
+
 	imp.dbHandle = db
 	return imp, nil
 }
