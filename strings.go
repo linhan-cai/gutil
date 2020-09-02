@@ -45,6 +45,14 @@ func NewString(s string) *string {
 	return &s1
 }
 
+type MysqlConf struct {
+	Host string
+	Port uint16
+	User string
+	Pass string
+	Name string
+}
+
 func MysqlDSN(dbHost string, dbPort uint16, dbUser, dbPass, dbName string) string {
 	return fmt.Sprintf("%s:%s@tcp(%s:%d)/%s", dbUser, dbPass, dbHost, dbPort, dbName)
 }
